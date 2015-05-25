@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="uWu-mK-Lhe">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Native view controller-->
+        <scene sceneID="5pA-cH-BnI">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="uWu-mK-Lhe" userLabel="Native view controller" customClass="InstantTrackingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zdP-Ic-GWF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Brp-Cv-YrY"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" drawableDepthFormat="24" enableSetNeedsDisplay="NO" id="ouu-7c-sFl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfR-yJ-zfY">
+                                <rect key="frame" x="280" y="20" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eJz-a1-p4w"/>
+                                    <constraint firstAttribute="width" constant="40" id="pa2-7d-KhS"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                                <state key="normal" image="cancel.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onCloseButtonClicked:" destination="uWu-mK-Lhe" eventType="touchUpInside" id="lZD-sf-ymY"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbd-hU-o21">
+                                <rect key="frame" x="218" y="355" width="90" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="L7r-DJ-0gx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="2D">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.43242612092391308" green="0.43242612092391308" blue="0.43242612092391308" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="on2DButtonClicked:" destination="uWu-mK-Lhe" eventType="touchUpInside" id="vNr-NE-LuY"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nt8-om-1V6">
+                                <rect key="frame" x="217" y="394" width="91" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="2ro-aC-6J0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="2D Rectified">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.43242612092391308" green="0.43242612092391308" blue="0.43242612092391308" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="on2DRectifiedButtonClicked:" destination="uWu-mK-Lhe" eventType="touchUpInside" id="tSQ-Ep-vS2"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQ9-1z-NbE">
+                                <rect key="frame" x="218" y="433" width="90" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="Jld-hp-osY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="3D">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.43242612092391308" green="0.43242612092391308" blue="0.43242612092391308" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="on3DButtonClicked:" destination="uWu-mK-Lhe" eventType="touchUpInside" id="csZ-WI-qNt"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHo-o9-AY3" userLabel="Button - 2D SLAM">
+                                <rect key="frame" x="218" y="472" width="90" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="wV6-od-Y8U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="2D SLAM">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.43242612092391308" green="0.43242612092391308" blue="0.43242612092391308" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="on2DSLAMButtonClicked:" destination="uWu-mK-Lhe" eventType="touchUpInside" id="X5c-HV-Uhe"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dkW-hR-Q31" userLabel="Button - 2D SLAM Extrapolation">
+                                <rect key="frame" x="218" y="511" width="90" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="90" id="3PD-Sr-sWj"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="Tic-Hf-QCj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="2D SLAM + sensor extrapolation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.43242612092391308" green="0.43242612092391308" blue="0.43242612092391308" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="on2DSLAMExtrapolationButtonClicked:" destination="uWu-mK-Lhe" eventType="touchUpInside" id="4ul-e1-iUp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="LHo-o9-AY3" firstAttribute="trailing" secondItem="hbd-hU-o21" secondAttribute="trailing" id="4n7-ze-d3I"/>
+                            <constraint firstItem="LHo-o9-AY3" firstAttribute="trailing" secondItem="dkW-hR-Q31" secondAttribute="trailing" id="7QL-qL-OAO"/>
+                            <constraint firstAttribute="trailing" secondItem="dfR-yJ-zfY" secondAttribute="trailing" id="7hX-53-n0T"/>
+                            <constraint firstItem="LHo-o9-AY3" firstAttribute="width" secondItem="dkW-hR-Q31" secondAttribute="width" id="9oA-R2-Dmz"/>
+                            <constraint firstItem="LHo-o9-AY3" firstAttribute="width" secondItem="Nt8-om-1V6" secondAttribute="width" id="AcW-Cp-iQt"/>
+                            <constraint firstItem="dfR-yJ-zfY" firstAttribute="top" secondItem="zdP-Ic-GWF" secondAttribute="bottom" id="F5p-om-pkc"/>
+                            <constraint firstItem="LHo-o9-AY3" firstAttribute="trailing" secondItem="IQ9-1z-NbE" secondAttribute="trailing" id="Gj4-JE-bzd"/>
+                            <constraint firstItem="IQ9-1z-NbE" firstAttribute="top" secondItem="Nt8-om-1V6" secondAttribute="bottom" constant="12" id="VBq-hA-BRo"/>
+                            <constraint firstItem="LHo-o9-AY3" firstAttribute="width" secondItem="IQ9-1z-NbE" secondAttribute="width" id="Xei-Cu-Fcf"/>
+                            <constraint firstItem="dkW-hR-Q31" firstAttribute="top" secondItem="LHo-o9-AY3" secondAttribute="bottom" constant="12" id="Y8r-cg-Dxx"/>
+                            <constraint firstItem="LHo-o9-AY3" firstAttribute="top" secondItem="IQ9-1z-NbE" secondAttribute="bottom" constant="12" id="ZHh-es-7O5"/>
+                            <constraint firstAttribute="trailing" secondItem="dkW-hR-Q31" secondAttribute="trailing" constant="12" id="jBB-M3-b9J"/>
+                            <constraint firstItem="Nt8-om-1V6" firstAttribute="top" secondItem="hbd-hU-o21" secondAttribute="bottom" constant="12" id="t9k-Id-ALu"/>
+                            <constraint firstItem="LHo-o9-AY3" firstAttribute="trailing" secondItem="Nt8-om-1V6" secondAttribute="trailing" id="tIL-YX-Phh"/>
+                            <constraint firstItem="Brp-Cv-YrY" firstAttribute="top" secondItem="dkW-hR-Q31" secondAttribute="bottom" constant="12" id="wM7-a3-5m6"/>
+                            <constraint firstItem="LHo-o9-AY3" firstAttribute="width" secondItem="hbd-hU-o21" secondAttribute="width" id="wya-Wl-vkA"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="delegate" destination="uWu-mK-Lhe" id="VGr-k1-3jt"/>
+                        </connections>
+                    </glkView>
+                    <connections>
+                        <outlet property="glkView" destination="ouu-7c-sFl" id="vca-Fa-trv"/>
+                        <outlet property="m_2DButton" destination="hbd-hU-o21" id="uBb-es-qbx"/>
+                        <outlet property="m_2DRectifiedButton" destination="Nt8-om-1V6" id="WX4-Sx-XUF"/>
+                        <outlet property="m_2DSLAMButton" destination="LHo-o9-AY3" id="dLM-I9-DGj"/>
+                        <outlet property="m_2DSLAMExtrapolationButton" destination="dkW-hR-Q31" id="PF7-cg-2d8"/>
+                        <outlet property="m_3DButton" destination="IQ9-1z-NbE" id="vdd-NV-n1G"/>
+                    </connections>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhg-Y3-seg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="467" y="403"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cancel.png" width="48" height="48"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

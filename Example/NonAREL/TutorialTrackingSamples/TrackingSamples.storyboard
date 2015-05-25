@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="uWu-mK-Lhe">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Native view controller-->
+        <scene sceneID="5pA-cH-BnI">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="uWu-mK-Lhe" userLabel="Native view controller" customClass="TrackingSamplesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zdP-Ic-GWF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Brp-Cv-YrY"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" drawableDepthFormat="24" enableSetNeedsDisplay="NO" id="ouu-7c-sFl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfR-yJ-zfY">
+                                <rect key="frame" x="280" y="20" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eJz-a1-p4w"/>
+                                    <constraint firstAttribute="width" constant="40" id="pa2-7d-KhS"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                                <state key="normal" image="cancel.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onCloseButtonClicked:" destination="uWu-mK-Lhe" eventType="touchUpInside" id="lZD-sf-ymY"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZS-Jn-iWV" userLabel="Button - ID marker">
+                                <rect key="frame" x="234" y="469" width="80" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="FPr-Uf-Cd7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="tqz-2I-hVe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" title="ID marker">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onIDMarkerButtonClicked:" destination="uWu-mK-Lhe" eventType="touchUpInside" id="oVu-U7-vi2"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snR-dg-t2v" userLabel="Button - Picture">
+                                <rect key="frame" x="234" y="502" width="80" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" title="Picture">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPictureButtonClicked:" destination="uWu-mK-Lhe" eventType="touchUpInside" id="gtI-zg-nIC"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPB-je-0aq" userLabel="Button - Markerless">
+                                <rect key="frame" x="234" y="535" width="80" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" title="Markerless">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onMarkerlessButtonClicked:" destination="uWu-mK-Lhe" eventType="touchUpInside" id="cXm-1J-tEy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="gZS-Jn-iWV" firstAttribute="height" secondItem="QPB-je-0aq" secondAttribute="height" id="7A6-nk-HfE"/>
+                            <constraint firstAttribute="trailing" secondItem="dfR-yJ-zfY" secondAttribute="trailing" id="7hX-53-n0T"/>
+                            <constraint firstItem="snR-dg-t2v" firstAttribute="top" secondItem="gZS-Jn-iWV" secondAttribute="bottom" constant="6" id="7mU-zw-YUz"/>
+                            <constraint firstItem="dfR-yJ-zfY" firstAttribute="top" secondItem="zdP-Ic-GWF" secondAttribute="bottom" id="F5p-om-pkc"/>
+                            <constraint firstItem="gZS-Jn-iWV" firstAttribute="height" secondItem="snR-dg-t2v" secondAttribute="height" id="H4X-Q9-IVr"/>
+                            <constraint firstItem="QPB-je-0aq" firstAttribute="leading" secondItem="snR-dg-t2v" secondAttribute="leading" id="L2g-M3-Bvh"/>
+                            <constraint firstItem="QPB-je-0aq" firstAttribute="trailing" secondItem="gZS-Jn-iWV" secondAttribute="trailing" id="Pwv-CZ-eDI"/>
+                            <constraint firstItem="QPB-je-0aq" firstAttribute="top" secondItem="snR-dg-t2v" secondAttribute="bottom" constant="6" id="VuG-Xa-vfo"/>
+                            <constraint firstItem="Brp-Cv-YrY" firstAttribute="top" secondItem="QPB-je-0aq" secondAttribute="bottom" constant="6" id="aNf-4f-qap"/>
+                            <constraint firstItem="QPB-je-0aq" firstAttribute="leading" secondItem="gZS-Jn-iWV" secondAttribute="leading" id="ijL-6r-Cm9"/>
+                            <constraint firstAttribute="trailing" secondItem="QPB-je-0aq" secondAttribute="trailing" constant="6" id="uUF-fY-NT4"/>
+                            <constraint firstItem="QPB-je-0aq" firstAttribute="trailing" secondItem="snR-dg-t2v" secondAttribute="trailing" id="uVJ-io-jL0"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="delegate" destination="uWu-mK-Lhe" id="VGr-k1-3jt"/>
+                        </connections>
+                    </glkView>
+                    <connections>
+                        <outlet property="button_idMarker" destination="gZS-Jn-iWV" id="iYM-hu-IGF"/>
+                        <outlet property="button_markerless" destination="QPB-je-0aq" id="UYg-0K-IWC"/>
+                        <outlet property="button_picture" destination="snR-dg-t2v" id="Gg1-t5-WMW"/>
+                        <outlet property="glkView" destination="ouu-7c-sFl" id="vca-Fa-trv"/>
+                    </connections>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhg-Y3-seg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="467" y="403"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cancel.png" width="48" height="48"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
