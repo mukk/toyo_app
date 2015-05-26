@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6325D4471638445100BBCF85 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 6325D4391638445100BBCF85 /* cancel.png */; };
-		9A65D4A917426E050010FEAA /* tutorialContent in Resources */ = {isa = PBXBuildFile; fileRef = 9A65D4A817426E050010FEAA /* tutorialContent */; };
+		9A65D4A917426E050010FEAA /* Content in Resources */ = {isa = PBXBuildFile; fileRef = 9A65D4A817426E050010FEAA /* Content */; };
 		9E81668719A1E7F7003CBF38 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E81668619A1E7F7003CBF38 /* Menu.storyboard */; };
 		9E86D08B18AD02F200BC26D2 /* metaioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2A50D9171FD86000A07E3C /* metaioSDK.framework */; };
 		9EA25D05199A4B9F0033A948 /* AREL.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA25D04199A4B9F0033A948 /* AREL.storyboard */; };
@@ -41,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		6325D4391638445100BBCF85 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cancel.png; path = Example/Resources/cancel.png; sourceTree = "<group>"; };
-		9A65D4A817426E050010FEAA /* tutorialContent */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tutorialContent; path = ../../../tutorialContent; sourceTree = "<group>"; };
+		9A65D4A817426E050010FEAA /* Content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Content; path = ../../../Content; sourceTree = "<group>"; };
 		9E2A50D9171FD86000A07E3C /* metaioSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = metaioSDK.framework; path = ../../metaioSDK.framework; sourceTree = "<group>"; };
 		9E384CF1190ABA230037E16E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		9E55C9F316F740430068ACC8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -123,7 +123,7 @@
 		B9BC114015D8FA7B00713ED3 = {
 			isa = PBXGroup;
 			children = (
-				9A65D4A817426E050010FEAA /* tutorialContent */,
+				9A65D4A817426E050010FEAA /* Content */,
 				9EA25D03199A4B8B0033A948 /* AREL */,
 				B9BC115515D8FA7B00713ED3 /* Example */,
 				B9BC114E15D8FA7B00713ED3 /* Frameworks */,
@@ -265,7 +265,7 @@
 				6325D4471638445100BBCF85 /* cancel.png in Resources */,
 				9EA2C48A18AA7459003D433F /* MetaioCloudPlugin.bundle in Resources */,
 				9EA25D05199A4B9F0033A948 /* AREL.storyboard in Resources */,
-				9A65D4A917426E050010FEAA /* tutorialContent in Resources */,
+				9A65D4A917426E050010FEAA /* Content in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

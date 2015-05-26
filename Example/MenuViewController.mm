@@ -15,7 +15,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     
-    NSString *htmlPath = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html" inDirectory:@"tutorialContent/Menu"];
+    NSString *htmlPath = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html" inDirectory:@"Content/Menu"];
     NSURL *url = [NSURL fileURLWithPath:htmlPath];
     
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
@@ -45,7 +45,7 @@
         if (tutorialId)
         {
 			arelConfigFile = @"index";
-			NSString *tutorialDir = [NSString stringWithFormat:@"tutorialContent/%@", tutorialId];
+			NSString *tutorialDir = [NSString stringWithFormat:@"Content/%@", tutorialId];
 			NSString *arelConfigFilePath = [[NSBundle mainBundle] pathForResource:arelConfigFile ofType:@"xml" inDirectory:tutorialDir];
 			NSLog(@"Will be loading AREL from %@",arelConfigFilePath);
 			ExampleARELViewController* tutorialViewController = [[UIStoryboard storyboardWithName:@"AREL" bundle:nil] instantiateInitialViewController];
