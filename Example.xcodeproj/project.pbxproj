@@ -11,7 +11,6 @@
 		9A65D4A917426E050010FEAA /* Content in Resources */ = {isa = PBXBuildFile; fileRef = 9A65D4A817426E050010FEAA /* Content */; };
 		9E81668719A1E7F7003CBF38 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E81668619A1E7F7003CBF38 /* Menu.storyboard */; };
 		9E86D08B18AD02F200BC26D2 /* metaioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2A50D9171FD86000A07E3C /* metaioSDK.framework */; };
-		9EA25D05199A4B9F0033A948 /* AREL.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA25D04199A4B9F0033A948 /* AREL.storyboard */; };
 		9EA25D0B199A4C700033A948 /* MenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9EA25D0A199A4C700033A948 /* MenuViewController.mm */; };
 		9EA25D0C199A505C0033A948 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E384CF1190ABA230037E16E /* CoreImage.framework */; };
 		9EA25D0D199A505F0033A948 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62CF7E1732B30300E238F5 /* Security.framework */; };
@@ -36,7 +35,8 @@
 		B9BC117015D8FD8F00713ED3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BC116F15D8FD8F00713ED3 /* libz.dylib */; };
 		B9BC117215D8FD9B00713ED3 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BC117115D8FD9B00713ED3 /* libxml2.dylib */; };
 		B9BC118215D8FDF500713ED3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BC118115D8FDF500713ED3 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		F23201B519EBBE2D001455AE /* ExampleARELViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F23201B419EBBE2D001455AE /* ExampleARELViewController.mm */; };
+		CE6095601B3AF18800B6DB11 /* AREL.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE60955D1B3AF18800B6DB11 /* AREL.storyboard */; };
+		CE6095611B3AF18800B6DB11 /* PlayerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE60955F1B3AF18800B6DB11 /* PlayerViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +47,6 @@
 		9E55C9F316F740430068ACC8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		9E62CF7E1732B30300E238F5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9E81668619A1E7F7003CBF38 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
-		9EA25D04199A4B9F0033A948 /* AREL.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = AREL.storyboard; path = Example/AREL/AREL.storyboard; sourceTree = "<group>"; };
 		9EA25D09199A4C700033A948 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		9EA25D0A199A4C700033A948 /* MenuViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MenuViewController.mm; sourceTree = "<group>"; };
 		9EA25D14199A508C0033A948 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -76,8 +75,9 @@
 		B9BC117D15D8FDE900713ED3 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		B9BC118115D8FDF500713ED3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B9E098B31664D382004A541E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		F23201B319EBBE2D001455AE /* ExampleARELViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleARELViewController.h; path = Example/AREL/ExampleARELViewController.h; sourceTree = "<group>"; };
-		F23201B419EBBE2D001455AE /* ExampleARELViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ExampleARELViewController.mm; path = Example/AREL/ExampleARELViewController.mm; sourceTree = "<group>"; };
+		CE60955D1B3AF18800B6DB11 /* AREL.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AREL.storyboard; sourceTree = "<group>"; };
+		CE60955E1B3AF18800B6DB11 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		CE60955F1B3AF18800B6DB11 /* PlayerViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PlayerViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,24 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9EA25D03199A4B8B0033A948 /* AREL */ = {
-			isa = PBXGroup;
-			children = (
-				F23201B319EBBE2D001455AE /* ExampleARELViewController.h */,
-				F23201B419EBBE2D001455AE /* ExampleARELViewController.mm */,
-				9EA25D04199A4B9F0033A948 /* AREL.storyboard */,
-			);
-			name = AREL;
-			sourceTree = "<group>";
-		};
 		B9BC114015D8FA7B00713ED3 = {
 			isa = PBXGroup;
 			children = (
 				9A65D4A817426E050010FEAA /* Content */,
-				9EA25D03199A4B8B0033A948 /* AREL */,
 				B9BC115515D8FA7B00713ED3 /* Example */,
 				B9BC114E15D8FA7B00713ED3 /* Frameworks */,
 				B9BC114C15D8FA7B00713ED3 /* Products */,
+				CE60955C1B3AF18800B6DB11 /* AREL */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +193,17 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		CE60955C1B3AF18800B6DB11 /* AREL */ = {
+			isa = PBXGroup;
+			children = (
+				CE60955D1B3AF18800B6DB11 /* AREL.storyboard */,
+				CE60955E1B3AF18800B6DB11 /* PlayerViewController.h */,
+				CE60955F1B3AF18800B6DB11 /* PlayerViewController.mm */,
+			);
+			name = AREL;
+			path = Example/AREL;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -259,12 +260,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6095601B3AF18800B6DB11 /* AREL.storyboard in Resources */,
 				B9BC115A15D8FA7B00713ED3 /* InfoPlist.strings in Resources */,
 				9ED7381319AB63FE00626EDC /* Images.xcassets in Resources */,
 				9E81668719A1E7F7003CBF38 /* Menu.storyboard in Resources */,
 				6325D4471638445100BBCF85 /* cancel.png in Resources */,
 				9EA2C48A18AA7459003D433F /* MetaioCloudPlugin.bundle in Resources */,
-				9EA25D05199A4B9F0033A948 /* AREL.storyboard in Resources */,
 				9A65D4A917426E050010FEAA /* Content in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,10 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F23201B519EBBE2D001455AE /* ExampleARELViewController.mm in Sources */,
 				9EA25D0B199A4C700033A948 /* MenuViewController.mm in Sources */,
 				B9BC115C15D8FA7C00713ED3 /* main.m in Sources */,
 				B9BC116015D8FA7C00713ED3 /* AppDelegate.m in Sources */,
+				CE6095611B3AF18800B6DB11 /* PlayerViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

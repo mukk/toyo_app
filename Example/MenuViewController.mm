@@ -1,6 +1,6 @@
 // Copyright 2007-2014 metaio GmbH. All rights reserved.
 #import "MenuViewController.h"
-#import "AREL/ExampleARELViewController.h"
+#import "AREL/PlayerViewController.h"
 
 @interface MenuViewController ()
 {
@@ -48,7 +48,7 @@
 			NSString *tutorialDir = [NSString stringWithFormat:@"Content/%@", tutorialId];
 			NSString *arelConfigFilePath = [[NSBundle mainBundle] pathForResource:arelConfigFile ofType:@"xml" inDirectory:tutorialDir];
 			NSLog(@"Will be loading AREL from %@",arelConfigFilePath);
-			ExampleARELViewController* tutorialViewController = [[UIStoryboard storyboardWithName:@"AREL" bundle:nil] instantiateInitialViewController];
+			PlayerViewController* tutorialViewController = [[UIStoryboard storyboardWithName:@"AREL" bundle:nil] instantiateInitialViewController];
 			tutorialViewController.arelFilePath = arelConfigFilePath;
 			tutorialViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
 			[self presentViewController:tutorialViewController animated:YES completion:nil];
