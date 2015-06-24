@@ -40,6 +40,7 @@
 		}
         return NO;
     }
+    
     else if([[absoluteString lowercaseString] hasPrefix:@"musicapp://"])
     {
         if (tutorialId)
