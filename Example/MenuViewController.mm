@@ -40,7 +40,7 @@
 		}
         return NO;
     }
-    else if([[absoluteString lowercaseString] hasPrefix:@"metaiosdkexamplearel://"])
+    else if([[absoluteString lowercaseString] hasPrefix:@"musicapp://"])
     {
         if (tutorialId)
         {
