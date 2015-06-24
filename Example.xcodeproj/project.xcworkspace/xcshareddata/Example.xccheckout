@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>7BD41A39-A7BA-405F-A203-D064C2BC1904</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Example</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>8CF8476AD95FE885EC70ACD1ACA5A7330CB2B8F8</key>
 		<string>https://github.com/mukk/toyo_app.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Example.xcodeproj/project.xcworkspace</string>
+	<string>Example.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>8CF8476AD95FE885EC70ACD1ACA5A7330CB2B8F8</key>
